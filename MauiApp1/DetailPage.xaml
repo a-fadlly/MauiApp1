@@ -1,0 +1,15 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.DetailPage"
+             Title="Detail Page">
+    <NavigationPage.HasBackButton>
+        <OnPlatform x:TypeArguments="x:Boolean">
+            <On Platform="iOS" Value="False" />
+            <On Platform="Android" Value="False" />
+        </OnPlatform>
+    </NavigationPage.HasBackButton>
+    <StackLayout>
+        <Label Text="{Binding Name}" />
+        <Label Text="{Binding Phone}" />
+    </StackLayout>
+</ContentPage>
